@@ -5,7 +5,7 @@ export const maxDuration = 300; // 5 minutes
 
 export async function POST(req: NextRequest) {
   // Initialize Gemini API
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
   if (!apiKey) {
     return NextResponse.json({ error: 'GEMINI_API_KEY is not set' }, { status: 500 });
   }
