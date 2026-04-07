@@ -1,0 +1,5 @@
+{
+  "name": "ScribeNote",
+  "description": "Personal & family audio-to-text transcription app using Gemini 2.5",
+  "requestFramePermissions": []
+}
